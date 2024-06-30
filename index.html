@@ -96,9 +96,22 @@
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/Screenshot 2024-06-29 at 12.53.24 PM.png" alt="Automatically Processing New Accessions Within the Library System"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">In this project, I automated the senior-level process of adding new accessions from a file 
-                                        of data into the library system, and sorting new accessions into their respective resources within the 
-                                        database.<br><br>Language: Python<br><br>Tech Stack/Toolkit: Pandas, ArhivesSnake API, JSON, Regex<br><br>
+                                    <p class="mb-5" style="font-size: 20px;">New Accessions is one of the five programs that I have written at my current position as a Software Developer for Special Collections. It automates the process of adding new accessions into the Special Collections library database. There are two parts: new_accessions.py and update_repos.py.</p>
+                                    <p class="mb-5">Language: Python<br><br>Tech Stack/Toolkit: Pandas, ArhivesSnake API, JSON, Regex<br><br></p>
+                                    <p class="mb-5" style="font-size: 30px; font-weight:bold;">Program Runthrogh</p>
+                                    <p class="mb-5"><larger>A spreadsheet is automatically filled with inputs from a google form, and downloaded as a CSV.</larger><br><br>
+                                        <img class="img-fluid rounded mb-5" src="https://i.ibb.co/HYjM5CB/example-csv.png" alt="example-csv" border="0" width="830" height="340"><br>
+                                        <larger>Running new_accessions.py program on the input csv.</larger><br>
+                                        <grey>A csv path is the second argument and input for this program, which outputs two logs (error and success) and 'posted_accessions.csv'. While going through each line of the input csv, the program first creates a new accession within the library database and then determines if a matching resource exists in the database, and writes this information in the output csv.</grey><br><br>
+                                        <iframe class="img-fluid2 rounded mb-5" src="https://giphy.com/embed/3n2mqDYpUcaOFGARtK" width="600" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                                        posted_accessions.csv after the run:<br><br>
+                                        <img class="img-fluid rounded mb-5" src="https://i.ibb.co/LYpLhGW/posted-acc.png" alt="posted-acc" border="0" width="830" height="340"><br>
+                                        <larger>After senior-level Special Collections staff reviews the csv and logs, update_repos.py is run.</larger><br>
+                                        <grey>Update repos parses through the 'posted_accessions.csv' and either puts the new accession into the matching resource, or creates a new resource, depending on the 'Resource Found' column.</grey><br>
+                                        <br><br>
+                                        <larger>New Accessions are now in Library system and sorted in their respective repositories.</larger><br>
+                                        <grey>yay!</grey><br><br>
+                                        <img src="https://i.ibb.co/z4x9YFC/posted-online-acc.png" alt="posted-online-acc" border="0"><br><br><br><br>
                                         <a href="https://github.com/alexagoff/new-accession-ingest">View Source Code</a> </p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
@@ -126,7 +139,8 @@
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/Screenshot 2024-06-29 at 12.49.49 PM.png" alt="Dangerous Dave - C game"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">In progress.<br><br>Language: C
+                                    <p class="mb-5" style="font-size: 20px;">In progress.</p>
+                                    <p>Language: C
                                         <br><br><a href="">Play Game</a><br><br><a href="https://github.com/kittkod/Dangerous_Dave">View Source Code</a></p>
                                     <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
                                 </div>
