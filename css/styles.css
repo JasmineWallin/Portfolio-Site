@@ -9906,6 +9906,10 @@ grey {
   color: rgb(165, 165, 165);
 }
 
+bold {
+  font-weight: bold;
+}
+
 larger {
   font-size: 18px;
 }
